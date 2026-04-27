@@ -15,7 +15,9 @@ function ModalProduto() {
       modal
       contentStyle={{
         borderRadius: '1rem',
-        paddingBottom: '2rem'
+        paddingBottom: '2rem',
+        width: '90%',
+        maxWidth: '700px'
       }}
       >
         <FormProduto />

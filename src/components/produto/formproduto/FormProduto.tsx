@@ -105,7 +105,7 @@ function FormProduto() {
       <h1 className="text-2xl md:text-4xl text-center my-8">
         {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
       </h1>
-      <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovoProduto}>
+      <form className="flex flex-col w-full max-w-lg gap-4 px-4" onSubmit={gerarNovoProduto}>
         <div className="flex flex-col gap-2">
           <label htmlFor="nome">Nome do Produto</label>
           <input
@@ -113,7 +113,7 @@ function FormProduto() {
             placeholder="Nome"
             name="nome"
             required
-            className="border-2 border-slate-700 rounded p-2 bg-white"
+            className="border-2 border-slate-700 rounded p-2 bg-white w-full"
             value={produto.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
@@ -125,7 +125,7 @@ function FormProduto() {
             placeholder="Preço"
             name="preco"
             required
-            className="border-2 border-slate-700 rounded p-2 bg-white"
+            className="border-2 border-slate-700 rounded p-2 bg-white w-full"
             value={produto.preco}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
@@ -137,14 +137,14 @@ function FormProduto() {
             placeholder="Foto"
             name="foto"
             required
-            className="border-2 border-slate-700 rounded p-2 bg-white"
+            className="border-2 border-slate-700 rounded p-2 bg-white w-full"
             value={produto.foto}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
         </div>
         <div className="flex flex-col gap-2">
           <p>Categoria do Produto</p>
-          <select name="categoria" id="categoria" className="border p-2 border-slate-800 rounded bg-white"
+          <select name="categoria" id="categoria" className="border p-2 border-slate-800 rounded bg-white w-full"
           onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
           >
             <option value="" selected disabled>Selecione uma categoria
