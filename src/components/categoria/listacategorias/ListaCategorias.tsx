@@ -35,7 +35,7 @@ function ListaCategorias() {
 
   return  (
     <>
-    <div className="h-full w-full">
+    <div className="h-full w-full p-4">
 
       {
        isLoading && (

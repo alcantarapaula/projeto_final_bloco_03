@@ -1,3 +1,4 @@
+import ModalProduto from "../../components/produto/modalproduto/ModalProduto"
 
 
 function Home() {
@@ -19,9 +20,10 @@ function Home() {
             <p
             className="text-xl"
             >Aqui você encontra Medicamentos e Cosméticos</p>
-            <div className="flex justify-around gap-4">
+            {/* <div className="flex justify-around gap-4">
             <button className="border rounded px-4 py-2 text-white bg-indigo-800 hover:bg-indigo-900 hover:cursor-pointer">Cadastrar Produto</button> 
-            </div>
+            </div> */}
+            <ModalProduto />
           </div>
         </article>
       </section>
