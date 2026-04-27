@@ -1,4 +1,4 @@
-import { ShoppingCartIcon, UserIcon } from "@phosphor-icons/react"
+import { MagnifyingGlassIcon, ShoppingCartIcon, UserIcon } from "@phosphor-icons/react"
 import { Link } from "react-router-dom"
 
 function Navbar() {
@@ -9,10 +9,21 @@ function Navbar() {
       >
         <div className="container flex justify-between text-lg mx-8"
         >
-          <Link to="/home" className="text-2xl font-bold">
-          Farmácia PA+
+          <Link to="">
+          <img src="https://ik.imagekit.io/paula/logofarmacia.png" alt="Logo Farmácia" className="max-h-12" />
           </Link>
-          <div className="flex gap-4"
+            <div className="flex items-center gap-2 p-0 w-1/4 md:w-1/3">
+            <input
+              type="text"
+              placeholder="Procurar..."
+              className="bg-white border border-gray-300 rounded px-3 py-0.5 sm:py-1 text-black outline-none focus:ring-2 focus:ring-blue-600 w-full"
+            />
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 sm:px-3 sm:py-2 rounded">
+              <MagnifyingGlassIcon size={20} className="hidden sm:block" />
+              <MagnifyingGlassIcon size={14} className="sm:hidden"/>
+            </button>
+          </div>
+          <div className="flex gap-4 items-center"
           >
             <Link to="" className="hover:underline">
               Categorias
