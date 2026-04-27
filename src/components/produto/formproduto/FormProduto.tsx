@@ -102,7 +102,7 @@ function FormProduto() {
 
   return (
     <div className="container flex flex-col mx-auto items-center">
-      <h1 className="text-4xl text-center my-8">
+      <h1 className="text-2xl md:text-4xl text-center my-8">
         {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
       </h1>
       <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovoProduto}>

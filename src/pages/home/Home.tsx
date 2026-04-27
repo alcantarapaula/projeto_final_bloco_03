@@ -16,13 +16,10 @@ function Home() {
             />
           </figure>
           <div className="flex flex-col justify-center items-center gap-4 py-4 text-center md:text-left order-last md:order-first">
-            <h2 className="text-5xl font-bold">Seja Bem Vindo!</h2>
+            <h2 className="text-3xl md:text-5xl font-bold">Seja Bem Vindo!</h2>
             <p
-            className="text-xl"
+            className="text-lg md:text-xl"
             >Aqui você encontra Medicamentos e Cosméticos</p>
-            {/* <div className="flex justify-around gap-4">
-            <button className="border rounded px-4 py-2 text-white bg-indigo-800 hover:bg-indigo-900 hover:cursor-pointer">Cadastrar Produto</button> 
-            </div> */}
             <ModalProduto />
           </div>
         </article>

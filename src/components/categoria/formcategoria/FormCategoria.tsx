@@ -79,7 +79,7 @@ function FormCategoria() {
 
   return (
     <div className="container flex flex-col items-center justify-center mx-auto">
-      <h1 className="text-4xl text-center my-8">{id === undefined ? "Cadastrar" : "Editar"} Categoria</h1>
+      <h1 className="text-2xl md:text-4xl text-center my-8">{id === undefined ? "Cadastrar" : "Editar"} Categoria</h1>
       <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
         <div className="flex flex-col gap-2">
           <label htmlFor="nome">Nome da Categoria</label>
