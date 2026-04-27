@@ -28,8 +28,8 @@ function Navbar() {
             <Link to="/categorias" className="hover:underline">
               Categorias
             </Link>
-            <Link to="/cadastrarcategorias" className="hover:underline">
-              Cadastrar Categorias
+            <Link to="/cadastrarcategoria" className="hover:underline">
+              Cadastrar Categoria
             </Link>
             <Link to="">
               <UserIcon size={32}/>
