@@ -9,7 +9,7 @@ function Navbar() {
       >
         <div className="container flex justify-between text-lg mx-8"
         >
-          <Link to="">
+          <Link to="/home">
           <img src="https://ik.imagekit.io/paula/logofarmacia.png" alt="Logo Farmácia" className="max-h-12" />
           </Link>
             <div className="flex items-center gap-2 p-0 w-1/4 md:w-1/3">
@@ -25,10 +25,10 @@ function Navbar() {
           </div>
           <div className="flex gap-4 items-center"
           >
-            <Link to="" className="hover:underline">
+            <Link to="/categorias" className="hover:underline">
               Categorias
             </Link>
-            <Link to="" className="hover:underline">
+            <Link to="/cadastrarcategorias" className="hover:underline">
               Cadastrar Categorias
             </Link>
             <Link to="">
